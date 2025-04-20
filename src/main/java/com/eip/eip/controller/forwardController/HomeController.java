@@ -3,6 +3,7 @@ package com.eip.eip.controller.forwardController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class HomeController {
@@ -17,6 +18,13 @@ public class HomeController {
     public String practice(Model model) {
         model.addAttribute("currentTab", "practice");
         return "practice";
+    }
+
+    @GetMapping("/practice/detail/{id}")
+    public String practiceDetail(@PathVariable String id, Model model) {
+        model.addAttribute("currentTab", "practice");
+        model.addAttribute("examId", id);
+        return "practiceDetail";
     }
 
     @GetMapping("/schedule")
