@@ -1,0 +1,87 @@
+.nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -2px;
+    border: none;
+    color: #495057;
+    padding: 1rem 2rem;
+}
+
+.body-section img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-message {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+/* 페이지 레이아웃 */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer-section {
+    margin-top: auto;
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-text {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .nav-tabs .nav-link {
+        padding: 0.5rem 1rem;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    .body-section img {
+        max-width: 200px;
+    }
+    .footer-text {
+        white-space: normal;
+        word-break: keep-all;
+        line-height: 1.5;
+    }
+} 
