@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout/base :: layout(~{::section})}">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/base :: layout(~{::section}, ~{::css})}">
 <head>
-    <title>기출문제 세부 - 정보처리기사 실기</title>
+    <title>정보처리기사 실기</title>
+    <th:block th:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/practiceDetail.css}">
+    </th:block>
 </head>
 <body>
-    <section>
+    <section th:fragment="content">
         <!-- 바디 영역 -->
         <div class="body-section">
             <div class="row justify-content-center">

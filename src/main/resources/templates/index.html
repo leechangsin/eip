@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout/base :: layout(~{::section})}">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/base :: layout(~{::section}, ~{::css})}">
 <head>
     <title>정보처리기사 실기</title>
+    <th:block th:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/index.css}">
+    </th:block>
 </head>
 <body>
-    <section>
+    <section th:fragment="content">
         <!-- 바디 영역 -->
         <div class="body-section text-center my-5">
             <img src="/images/index.png" alt="웃으면서 점프를 뛰며 한 손을 주먹 쥐고 하늘을 향해 쭉 뻗는 사람 이미지" class="mb-4">

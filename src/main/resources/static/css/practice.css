@@ -1,0 +1,21 @@
+.list-group {
+    margin-top: 2rem;
+}
+
+.list-group-item {
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.list-group-item h5 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.text-muted {
+    color: #6c757d;
+} 
